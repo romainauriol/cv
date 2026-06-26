@@ -19,12 +19,14 @@
         </nav>
     </header>
 
-    <!-- SECTION 1 : LES PROCÉDURES (Remontée en haut) -->
+    <!-- SECTION 1 : LES PROCÉDURES -->
     <h2 style="text-align: center; color: #333; margin-top: 40px; margin-bottom: 20px;">Mes Procédures & Documentations Homelab</h2>
 
     <div class="project-container">
         <!-- Colonne gauche -->
         <div class="project-column">
+            
+            <!-- Projet 1 : OpenVPN -->
             <div class="project">
                 <div class="project-image">
                     <a href="docs/Procedure_OpenVPN_LDAP.pdf" target="_blank" rel="noopener noreferrer">
@@ -42,10 +44,70 @@
                     </p>
                 </div>
             </div>
+
+            <!-- Projet 2 : Zabbix -->
+            <div class="project">
+                <div class="project-image">
+                    <a href="docs/procedure_zabbix.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="image/zabbix.png" alt="Supervision Zabbix">
+                    </a>
+                </div>
+                <div class="project-description">
+                    <h3>📊 Supervision avec Zabbix</h3>
+                    <p>
+                        Déploiement et configuration d'un serveur de supervision Zabbix pour le monitoring de l'infrastructure. Mise en place des agents, remontée des alertes et analyse des métriques.
+                        <br><br>
+                        <a href="docs/procedure_zabbix.pdf" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #007bff;">
+                            📄 Consulter la procédure (PDF)
+                        </a>
+                    </p>
+                </div>
+            </div>
+
         </div>
 
         <!-- Colonne droite -->
         <div class="project-column">
+            
+            <!-- Projet 3 : Proxmox Backup Server -->
+            <div class="project">
+                <div class="project-image">
+                    <a href="docs/Procedure_proxmox_backup_server.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="image/proxmox_backup.png" alt="Proxmox Backup Server">
+                    </a>
+                </div>
+                <div class="project-description">
+                    <h3>💾 Proxmox Backup Server (PBS)</h3>
+                    <p>
+                        Mise en place d'une solution de sauvegarde dédiée pour l'environnement de virtualisation. Configuration des datastores, gestion des sauvegardes incrémentales et déduplication des données.
+                        <br><br>
+                        <a href="docs/Procedure_proxmox_backup_server.pdf" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #007bff;">
+                            📄 Consulter la procédure (PDF)
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Projet 4 : Cluster Proxmox -->
+            <div class="project">
+                <div class="project-image">
+                    <a href="docs/Procedure_cluster_backup.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="image/pve02.png" alt="Cluster Proxmox Backup">
+                    </a>
+                </div>
+                <div class="project-description">
+                    <h3>🖥️ Cluster Proxmox & Stratégie de Sauvegarde</h3>
+                    <p>
+                        Configuration d'un nœud Proxmox (pve02) au sein du cluster et mise en œuvre des planifications de sauvegarde automatisées pour garantir la disponibilité des services.
+                        <br><br>
+                        <a href="docs/Procedure_cluster_backup.pdf" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #007bff;">
+                            📄 Consulter la procédure (PDF)
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Projet 5 : Redmine (En cours) -->
             <div class="project">
                 <div class="project-description">
                     <h3>🎫 Déploiement d'un outil ITSM (Redmine)</h3>
@@ -58,12 +120,13 @@
                     </p>
                 </div>
             </div>
+
         </div>
     </div>
 
     <hr class="divider" style="margin: 40px auto;">
 
-    <!-- SECTION 2 : LE PROFIL IT / RAPPORT (Descendue en bas) -->
+    <!-- SECTION 2 : LE PROFIL IT / RAPPORT -->
     <div class="featured-project">
         <h2>Mon Profil IT</h2>
         <img src="image/tremplin-vers-la-formation.jpg" alt="Couverture Rapport de Stage TSSR">
