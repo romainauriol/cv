@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSSR & Procédures - Romain Auriol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TSSR & Procédures Techniques</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Mon Parcours</a></li>
+                <li><a href="tssr.html">TSSR & Procédures</a></li>
+                <li><a href="projets.html">Projets Annexes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="featured-project">
+        <h2>Mon Profil IT</h2>
+        <img src="image/tremplin-vers-la-formation.jpg" alt="Couverture Rapport de Stage TSSR">
+        <h3>Technicien Supérieur en Systèmes et Réseaux</h3>
+        <p>
+            Découvrez mon rapport de stage réalisé à la DNSI de l'EHESP. Ce document détaille mes interventions de proximité, ma participation au maintien en conditions opérationnelles et mon intégration au sein d'une équipe support structurée.
+        </p>
+        <a class="btn-featured" href="https://www.canva.com/design/DAGcOMDvqB8/kQvqdk297Km1h32U-M1OGw/view?utm_content=DAGcOMDvqB8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf82c5043a3" target="_blank" rel="noopener noreferrer">
+            Consulter le rapport de stage
+        </a>
+    </div>
+    
+    <hr class="divider">
+    
+    <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Mes Procédures & Documentations Homelab</h2>
+
+    <div class="project-container">
+        <!-- Colonne gauche -->
+        <div class="project-column">
+            <div class="project">
+                <div class="project-description">
+                    <h3>🔐 Déploiement OpenVPN & Authentification LDAP</h3>
+                    <p>
+                        Mise en place d'un accès distant sécurisé sur mon infrastructure virtualisée (Proxmox / pfSense). Configuration du VPN et synchronisation des droits d'accès avec l'annuaire Active Directory.
+                        <br><br>
+                        <a href="docs/Procedure_OpenVPN_LDAP.pdf" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #007bff;">
+                            📄 Consulter la procédure (PDF)
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="project-column">
+            <div class="project">
+                <div class="project-description">
+                    <h3>🎫 Déploiement d'un outil ITSM (Redmine)</h3>
+                    <p>
+                        Installation et configuration d'une solution de ticketing open-source conteneurisée (LXC) sous Proxmox. Intégration LDAP et résolution des problématiques de routage inter-VLAN.
+                        <br><br>
+                        <a href="#" style="font-style: italic; color: #666;">
+                            (Procédure en cours de rédaction)
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
