@@ -1,54 +1,27 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TSSR & Procédures - Romain Auriol</title>
-    <link rel="stylesheet" href="style.css">
-
-    <script data-goatcounter="https://romainauriol.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-</head>
-<body>
-    <header>
-        <h1>TSSR & Procédures Techniques</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="parcours.html">Mon Parcours</a></li>
-                <li><a href="tssr.html">TSSR & Procédures</a></li>
-                <li><a href="projets.html">Projets Annexes</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- SECTION 1 : LES PROCÉDURES -->
-    <h2 style="text-align: center; color: #333; margin-top: 40px; margin-bottom: 20px;">Mes Procédures & Documentations Homelab</h2>
-
-    <div class="project-container">
+<div class="project-container">
         <!-- Colonne gauche -->
         <div class="project-column">
-
-            <!-- Projet : Uptime Kuma -->
+            
+            <!-- 1. NOUVEAU : Portainer -->
             <div class="project">
                 <div class="project-image">
-                    <a href="docs/procedure_kuma.pdf" target="_blank" rel="noopener noreferrer">
-                        <img src="image/interface_kuma.png" alt="Interface Uptime Kuma">
+                    <a href="docs/procedure_portainer.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="image/portainer_accueil.png" alt="Interface Portainer">
                     </a>
                 </div>
                 <div class="project-description">
-                    <h3>📈 Supervision avec Uptime Kuma</h3>
+                    <h3>🐳 Déploiement Docker & Portainer</h3>
                     <p>
-                        Déploiement d'une solution de monitoring open-source pour surveiller la disponibilité des services de mon infrastructure. Configuration des sondes, gestion des statuts et mise en place des alertes.
+                        Mise en place d'un environnement conteneurisé sur une machine virtuelle Debian intégrée à mon cluster Proxmox. Utilisation de l'interface Portainer pour la gestion et l'orchestration simplifiée des conteneurs.
                         <br><br>
-                        <a href="docs/procedure_kuma.pdf" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #007bff;">
+                        <a href="docs/procedure_portainer.pdf" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #007bff;">
                             📄 Consulter la procédure (PDF)
                         </a>
                     </p>
                 </div>
             </div>
-            
-            <!-- Projet 1 : OpenVPN -->
+
+            <!-- 3. OpenVPN -->
             <div class="project">
                 <div class="project-image">
                     <a href="docs/Procedure_OpenVPN_LDAP.pdf" target="_blank" rel="noopener noreferrer">
@@ -67,7 +40,7 @@
                 </div>
             </div>
 
-            <!-- Projet 2 : Zabbix -->
+            <!-- 5. Zabbix -->
             <div class="project">
                 <div class="project-image">
                     <a href="docs/procedure_zabbix.pdf" target="_blank" rel="noopener noreferrer">
@@ -86,12 +59,45 @@
                 </div>
             </div>
 
+            <!-- 7. Redmine (En cours - Basculé à gauche) -->
+            <div class="project">
+                <div class="project-description">
+                    <h3>🎫 Déploiement d'un outil ITSM (Redmine)</h3>
+                    <p>
+                        Installation et configuration d'une solution de ticketing open-source conteneurisée (LXC) sous Proxmox. Intégration LDAP et résolution des problématiques de routage inter-VLAN.
+                        <br><br>
+                        <a href="#" style="font-style: italic; color: #666;">
+                            (Procédure en cours de rédaction)
+                        </a>
+                    </p>
+                </div>
+            </div>
+
         </div>
 
         <!-- Colonne droite -->
         <div class="project-column">
+
+            <!-- 2. Uptime Kuma (Basculé à droite) -->
+            <div class="project">
+                <div class="project-image">
+                    <a href="docs/procedure_kuma.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="image/interface_kuma.png" alt="Interface Uptime Kuma">
+                    </a>
+                </div>
+                <div class="project-description">
+                    <h3>📈 Supervision avec Uptime Kuma</h3>
+                    <p>
+                        Déploiement d'une solution de monitoring open-source pour surveiller la disponibilité des services de mon infrastructure. Configuration des sondes, gestion des statuts et mise en place des alertes.
+                        <br><br>
+                        <a href="docs/procedure_kuma.pdf" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #007bff;">
+                            📄 Consulter la procédure (PDF)
+                        </a>
+                    </p>
+                </div>
+            </div>
             
-            <!-- Projet 3 : Proxmox Backup Server -->
+            <!-- 4. Proxmox Backup Server -->
             <div class="project">
                 <div class="project-image">
                     <a href="docs/Procedure_proxmox_backup_server.pdf" target="_blank" rel="noopener noreferrer">
@@ -110,7 +116,7 @@
                 </div>
             </div>
 
-            <!-- Projet 4 : Cluster Proxmox -->
+            <!-- 6. Cluster Proxmox -->
             <div class="project">
                 <div class="project-image">
                     <a href="docs/Procedure_cluster_backup.pdf" target="_blank" rel="noopener noreferrer">
@@ -129,37 +135,5 @@
                 </div>
             </div>
 
-            <!-- Projet 5 : Redmine (En cours) -->
-            <div class="project">
-                <div class="project-description">
-                    <h3>🎫 Déploiement d'un outil ITSM (Redmine)</h3>
-                    <p>
-                        Installation et configuration d'une solution de ticketing open-source conteneurisée (LXC) sous Proxmox. Intégration LDAP et résolution des problématiques de routage inter-VLAN.
-                        <br><br>
-                        <a href="#" style="font-style: italic; color: #666;">
-                            (Procédure en cours de rédaction)
-                        </a>
-                    </p>
-                </div>
-            </div>
-
         </div>
     </div>
-
-    <hr class="divider" style="margin: 40px auto;">
-
-    <!-- SECTION 2 : LE PROFIL IT / RAPPORT -->
-    <div class="featured-project">
-        <h2>Mon Profil IT</h2>
-        <img src="image/EHESP-logo.png" alt="Couverture Rapport de Stage TSSR">
-        <h3>Technicien Supérieur en Systèmes et Réseaux</h3>
-        <p>
-            Découvrez mon rapport de stage réalisé à la DNSI de l'EHESP. Ce document détaille mes interventions de proximité, ma participation au maintien en conditions opérationnelles et mon intégration au sein d'une équipe support structurée.
-        </p>
-        <a class="btn-featured" href="docs/stage_ehesp.pdf" target="_blank" rel="noopener noreferrer">
-            Consulter le rapport de stage
-        </a>
-    </div>
-
-</body>
-</html>
