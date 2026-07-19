@@ -15,6 +15,7 @@ header {
 
 h1 {
     margin: 0;
+    margin-bottom: 20px; /* Ajoute l'espace entre le titre et les boutons */
     font-size: 2em;
 }
 
@@ -382,39 +383,46 @@ header nav ul li a:hover {
    MODE SOMBRE (DARK MODE) AUTOMATIQUE
    ========================================= */
 @media (prefers-color-scheme: dark) {
-    /* Couleur de fond générale et texte par défaut */
+    /* Fond général */
     body {
         background-color: #121212;
         color: #e0e0e0;
     }
 
-    /* Adapter le titre H2 (qui est actuellement en #333 dans ton HTML) */
-    h2 {
+    /* Titres clairs */
+    h2, h1 {
         color: #ffffff !important;
     }
 
-    /* Assombrir l'en-tête (header) et le pied de page (footer) */
+    /* En-tête et pied de page */
     header, footer {
         background-color: #1e1e1e;
         color: #ffffff;
     }
 
-    /* Assombrir le fond des cartes/blocs de tes projets (si applicable) */
-    .project, .project-description {
+    /* Blocs des projets */
+    .project, .project-description, .featured-project, .event .content {
         background-color: #1e1e1e;
-        color: #e0e0e0;
-        border-color: #333; /* Si tu as des bordures */
+        border-color: #333;
     }
 
-    /* Adapter la couleur des liens pour qu'ils soient lisibles sur fond noir */
-    nav ul li a {
-        color: #e0e0e0;
-    }
-    nav ul li a:hover {
-        color: #66b3ff;
+    /* CORRECTION 1 : Forcer le texte des descriptions en gris clair */
+    .project-description p, .featured-project p, .event .content p {
+        color: #e0e0e0 !important;
     }
 
-    a {
+    /* CORRECTION 2 : Ne pas toucher à la couleur du texte des boutons, mais assombrir leur fond */
+    header nav ul li a {
+        background-color: #333333 !important; 
+        color: #ffffff !important;
+    }
+    header nav ul li a:hover {
+        background-color: #555555 !important;
+        color: #66b3ff !important;
+    }
+
+    /* CORRECTION 3 : Cibler uniquement les liens textes (et pas les boutons) pour le bleu clair */
+    .project-description a, .featured-project a, .event .content a {
         color: #66b3ff !important;
     }
 }
