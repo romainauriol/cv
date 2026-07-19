@@ -8,13 +8,13 @@ L'objectif de ce dépôt est de documenter mes pratiques en tant que futur Admin
 
 ## 🏗️ Architecture Globale
 
-<div align="center">
+</div align="center">
   <!-- Remplacer les liens par tes futurs schémas réseau -->
-  #<picture>
-   #<source media="(prefers-color-scheme: dark)" srcset="image/schema_architecture_dark.png">
-  #<source media="(prefers-color-scheme: light)" srcset="image/schema_architecture_light.png">
-    #<img alt="Schéma de l'architecture réseau et système du Homelab" src="image/schema_architecture_light.png">
-  #</picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="image/schema_architecture_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="image/schema_architecture_light.png">
+    <img alt="Schéma de l'architecture réseau et système du Homelab" src="image/schema_architecture_light.png">
+  </picture>
 </div>
 
 L'environnement repose sur une architecture virtualisée stricte, segmentée et sécurisée :
