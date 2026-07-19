@@ -18,6 +18,7 @@
                 <li><a href="parcours.html">Mon Parcours</a></li>
                 <li><a href="tssr.html">TSSR & Procédures</a></li>
                 <li><a href="projets.html">Projets Annexes</a></li>
+                <li><a href="#" id="theme-toggle">🌙 Thème</a></li>
             </ul>
         </nav>
     </header>
@@ -167,5 +168,28 @@
     <footer>
         <p>&copy; 2026 Romain Auriol. Tous droits réservés.</p>
     </footer>
+
+    <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Vérifie si l'utilisateur avait déjà choisi le mode sombre
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+    }
+
+    // Action quand on clique sur le bouton
+    toggleButton.addEventListener('click', function(e) {
+        e.preventDefault(); // Empêche le lien de remonter en haut de la page
+        body.classList.toggle('dark-mode');
+        
+        // Sauvegarde le choix
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
 </body>
 </html>
