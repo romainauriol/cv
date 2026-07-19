@@ -15,7 +15,7 @@ header {
 
 h1 {
     margin: 0;
-    margin-bottom: 20px; /* Ajoute l'espace entre le titre et les boutons */
+    margin-bottom: 40px; /* Ajoute l'espace entre le titre et les boutons */
     font-size: 2em;
 }
 
