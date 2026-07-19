@@ -380,49 +380,34 @@ header nav ul li a:hover {
 }
 
 /* =========================================
-   MODE SOMBRE (DARK MODE) AUTOMATIQUE
+   MODE SOMBRE MANUEL
    ========================================= */
-@media (prefers-color-scheme: dark) {
-    /* Fond général */
-    body {
-        background-color: #121212;
-        color: #e0e0e0;
-    }
+body.dark-mode { background-color: #121212; color: #e0e0e0; }
 
-    /* Titres clairs */
-    h2, h1 {
-        color: #ffffff !important;
-    }
+.dark-mode h2, .dark-mode h1 { color: #ffffff !important; }
 
-    /* En-tête et pied de page */
-    header, footer {
-        background-color: #1e1e1e;
-        color: #ffffff;
-    }
+.dark-mode header, .dark-mode footer { background-color: #1e1e1e; color: #ffffff; }
 
-    /* Blocs des projets */
-    .project, .project-description, .featured-project, .event .content {
-        background-color: #1e1e1e;
-        border-color: #333;
-    }
+.dark-mode .project, .dark-mode .project-description, .dark-mode .featured-project, .dark-mode .event .content { 
+    background-color: #1e1e1e; 
+    border-color: #333; 
+}
 
-    /* CORRECTION 1 : Forcer le texte des descriptions en gris clair */
-    .project-description p, .featured-project p, .event .content p {
-        color: #e0e0e0 !important;
-    }
+.dark-mode .project-description p, .dark-mode .featured-project p, .dark-mode .event .content p { 
+    color: #e0e0e0 !important; 
+}
 
-    /* CORRECTION 2 : Ne pas toucher à la couleur du texte des boutons, mais assombrir leur fond */
-    header nav ul li a {
-        background-color: #333333 !important; 
-        color: #ffffff !important;
-    }
-    header nav ul li a:hover {
-        background-color: #555555 !important;
-        color: #66b3ff !important;
-    }
+/* Boutons de navigation - Rétablit le bleu */
+.dark-mode header nav ul li a { 
+    background-color: #0077cc !important; 
+    color: #ffffff !important; 
+}
+.dark-mode header nav ul li a:hover { 
+    background-color: #005fa3 !important; 
+    color: #ffcc00 !important; /* Le texte repasse en jaune au survol */
+}
 
-    /* CORRECTION 3 : Cibler uniquement les liens textes (et pas les boutons) pour le bleu clair */
-    .project-description a, .featured-project a, .event .content a {
-        color: #66b3ff !important;
-    }
+/* Liens textes classiques */
+.dark-mode .project-description a, .dark-mode .featured-project a, .dark-mode .event .content a { 
+    color: #66b3ff !important; 
 }
