@@ -328,11 +328,12 @@ header nav ul li a:hover {
 
 /* Conteneur global des projets */
 .project-container {
-    display: flex; /* Aligne les colonnes côte à côte */
-    justify-content: space-between; /* Espace entre les colonnes */
-    gap: 20px; /* Espacement horizontal */
-    margin-top: 30px; /* Espace par rapport à la section "À la Une" */
-    position: relative; /* Assure que les projets restent localisés */
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    margin: 30px auto 0 auto; /* Le "auto" permet de centrer le bloc sur l'écran */
+    max-width: 1200px; /* NOUVEAU : Empêche les cartes de s'étirer à l'infini sur grand écran */
+    position: relative; 
 }
 
 /* Colonnes des projets */
