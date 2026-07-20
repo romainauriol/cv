@@ -23,7 +23,7 @@ h1 {
 header p {
     font-size: 1.2em; /* Rend le texte plus imposant */
     font-weight: 500;
-    margin: 15px auto; /* Ajoute de l'espace en haut et en bas, et le centre */
+    margin: 15px auto 35px auto; /* Ajoute de l'espace en haut et en bas, et le centre */ /* Le '35px' force un grand espace sous le texte */
     max-width: 600px; /* Évite qu'il s'étale trop sur les côtés */
 }
 
