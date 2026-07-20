@@ -19,6 +19,14 @@ h1 {
     font-size: 2em;
 }
 
+/* Style du sous-titre dans l'en-tête */
+header p {
+    font-size: 1.2em; /* Rend le texte plus imposant */
+    font-weight: 500;
+    margin: 15px auto; /* Ajoute de l'espace en haut et en bas, et le centre */
+    max-width: 600px; /* Évite qu'il s'étale trop sur les côtés */
+}
+
 .timeline {
     position: relative;
     max-width: 800px;
