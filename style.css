@@ -171,14 +171,21 @@ footer {
     gap: 20px; /* Espace entre l'image et la description */
 }
 
+.project-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 .project-image img {
-    max-width: 300px; /* Taille maximale de l'image */
-    height: auto; /* Maintient les proportions */
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour un effet pro */
+    width: 100%;
+    max-width: 400px; /* Augmenté pour éviter l'effet miniature */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     border: none;
-    
+    object-fit: cover;
 }
 
 .project-image img:hover {
@@ -186,7 +193,9 @@ footer {
 }
 
 .project-description {
-    max-width: 600px; /* Largeur maximale de la description */
+    flex: 2;
+    max-width: none;
+    text-align: left;
 }
 
 .project-description h3 {
