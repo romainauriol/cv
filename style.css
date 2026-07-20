@@ -425,7 +425,7 @@ body.dark-mode { background-color: #121212; color: #e0e0e0; }
    MODE MOBILE (SMARTPHONES & TABLETTES)
    ========================================= */
 @media (max-width: 768px) {
-    /* 1. Menu : les boutons s'empilent verticalement */
+    /* 1. Menu et Boutons (Fix fond bleu sur bleu) */
     header nav ul {
         flex-direction: column;
         gap: 10px;
@@ -433,13 +433,35 @@ body.dark-mode { background-color: #121212; color: #e0e0e0; }
     header nav {
         margin-top: 15px;
     }
+    header nav ul li a {
+        display: block; /* Prend toute la largeur allouée */
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.1); /* Ajoute un fond légèrement visible */
+        border: 1px solid rgba(255, 255, 255, 0.5); /* Ajoute une bordure fine pour délimiter le bouton */
+    }
 
-    /* 2. Projets : les deux grandes colonnes se placent l'une sous l'autre */
+    /* 2. Accueil : Texte sous la photo */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .quote-container {
+        padding: 20px 10px;
+        text-align: center; /* Centre le texte pour un rendu plus propre sur mobile */
+    }
+    .quote-container blockquote {
+        border-left: none; /* Enlève la barre verticale bleue */
+        border-top: 4px solid #0077cc; /* Remplace par une petite barre horizontale au-dessus du texte */
+        padding-left: 0;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+
+    /* 3. Projets : les colonnes l'une sous l'autre */
     .project-container {
         flex-direction: column;
     }
-
-    /* 3. Intérieur d'un projet : l'image passe au-dessus du texte */
     .project {
         flex-direction: column;
         align-items: center;
@@ -448,7 +470,7 @@ body.dark-mode { background-color: #121212; color: #e0e0e0; }
         max-width: 100%;
     }
 
-    /* 4. Timeline (Mon Parcours) : réalignement pour éviter les débordements */
+    /* 4. Timeline : Parcours */
     .event.left, .event.right {
         flex-direction: column;
         align-items: center;
@@ -457,6 +479,6 @@ body.dark-mode { background-color: #121212; color: #e0e0e0; }
         margin: 0 0 10px 0;
     }
     .line {
-        display: none; /* Masque la ligne centrale verticale pour gagner de la largeur */
+        display: none;
     }
 }
