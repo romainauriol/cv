@@ -411,3 +411,43 @@ body.dark-mode { background-color: #121212; color: #e0e0e0; }
 .dark-mode .project-description a, .dark-mode .featured-project a, .dark-mode .event .content a { 
     color: #66b3ff !important; 
 }
+
+/* =========================================
+   MODE MOBILE (SMARTPHONES & TABLETTES)
+   ========================================= */
+@media (max-width: 768px) {
+    /* 1. Menu : les boutons s'empilent verticalement */
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header nav {
+        margin-top: 15px;
+    }
+
+    /* 2. Projets : les deux grandes colonnes se placent l'une sous l'autre */
+    .project-container {
+        flex-direction: column;
+    }
+
+    /* 3. Intérieur d'un projet : l'image passe au-dessus du texte */
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-image img {
+        max-width: 100%;
+    }
+
+    /* 4. Timeline (Mon Parcours) : réalignement pour éviter les débordements */
+    .event.left, .event.right {
+        flex-direction: column;
+        align-items: center;
+    }
+    .event.left .date, .event.right .date {
+        margin: 0 0 10px 0;
+    }
+    .line {
+        display: none; /* Masque la ligne centrale verticale pour gagner de la largeur */
+    }
+}
