@@ -166,20 +166,20 @@ footer {
 
 .project {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* Remplace flex-start par center */
     margin: 20px 0;
-    gap: 20px; /* Espace entre l'image et la description */
+    gap: 20px; 
 }
 
 .project-image {
-    flex: 1.2;
+    flex: 1.5;
     display: flex;
     justify-content: center;
 }
 
 .project-image img {
     width: 100%;
-    max-width: 400px; /* Augmenté pour éviter l'effet miniature */
+    max-width: 100%; /* Augmenté pour éviter l'effet miniature */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
