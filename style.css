@@ -201,11 +201,12 @@ footer {
 
 .project h3 {
     width: 100%;
-    text-align: center; /* Centre le titre sur toute la largeur */
+    flex: 0 0 100%; /* Cette ligne stricte force le titre à prendre toute la place et repousse l'image/texte en dessous */
+    text-align: center;
     color: #0077cc;
     font-size: 1.5em;
-    margin: 0 0 10px 0;
-    border-bottom: 1px solid #ddd; /* Optionnel : souligne le titre pour séparer de l'image */
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
 }
 
