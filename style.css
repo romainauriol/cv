@@ -166,13 +166,14 @@ footer {
 
 .project {
     display: flex;
+    flex-wrap: wrap; /* Ajoute juste cette ligne */
     align-items: center; /* Remplace flex-start par center */
     margin: 20px 0;
     gap: 20px; 
 }
 
 .project-image {
-    flex: 1.5;
+    flex: 1;
     display: flex;
     justify-content: center;
 }
@@ -193,15 +194,19 @@ footer {
 }
 
 .project-description {
-    flex: 1;
+    flex: 1.5;
     max-width: none;
     text-align: left;
 }
 
-.project-description h3 {
-    font-size: 1.5em;
+.project h3 {
+    width: 100%;
+    text-align: center; /* Centre le titre sur toute la largeur */
     color: #0077cc;
+    font-size: 1.5em;
     margin: 0 0 10px 0;
+    border-bottom: 1px solid #ddd; /* Optionnel : souligne le titre pour séparer de l'image */
+    padding-bottom: 10px;
 }
 
 .project-description p {
