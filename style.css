@@ -172,7 +172,7 @@ footer {
 }
 
 .project-image {
-    flex: 1;
+    flex: 1.2;
     display: flex;
     justify-content: center;
 }
@@ -193,7 +193,7 @@ footer {
 }
 
 .project-description {
-    flex: 2;
+    flex: 1;
     max-width: none;
     text-align: left;
 }
